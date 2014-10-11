@@ -23,19 +23,25 @@ A commandline tool to convert from/to Hjson is available at https://github.com/l
 If you obtained a source tarball, just use the standard autotools
 commands:
 
+   ```
    $ ./configure
    $ make
    $ make install
+   ```
 
 To run the test suite, invoke:
 
+   ```
    $ make check
+   ```
 
 If the source has been checked out from a Git repository, the
 ./configure script has to be generated first. The easiest way is to
 use autoreconf:
 
+   ```
    $ autoreconf -i
+   ```
 
 ## Documentation
 
@@ -43,9 +49,11 @@ Prebuilt HTML documentation is available at
 http://www.digip.org/jansson/doc/.
 
 The documentation source is in the ``doc/`` subdirectory. To generate
-HTML documentation, invoke::
+HTML documentation, invoke:
 
+   ```
    $ make html
+   ```
 
 Then, point your browser to ``doc/_build/html/index.html``. [Sphinx](http://sphinx.pocoo.org/)
 1.0 or newer is required to generate the documentation.
